@@ -3,13 +3,13 @@
     /// <summary>
     /// Merge Sorted Array
     /// </summary>
-    public class MergeSortedArray
+    public static class MergeSortedArray
     {
         /// <summary>
         /// Resolving task about sorting array
         /// </summary>
         /// <returns>Sorted array</returns>
-        public int[] ResolvingTask(int[] firstArray, int m, int[] secondArray, int n)
+        public static int[] ResolvingTask(int[] firstArray, int m, int[] secondArray, int n)
         {
             int firstArrayLenght = m - 1;
             int secondArrayLenght = n - 1;
