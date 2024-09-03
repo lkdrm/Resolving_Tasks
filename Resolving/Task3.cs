@@ -34,5 +34,32 @@ namespace Resolving
             }
             return result.ToArray();
         }
+
+        /// <summary>
+        /// Third variant where you can have same number only twice
+        /// </summary>
+        /// <param name="numbers">Array numbers</param>
+        /// <returns>Removed duplicate array</returns>
+        public static int[] Resolving3(int[] numbers)
+        {
+            int currentNumber = int.MinValue;
+            int twice = 0;
+            List<int> result = [];
+
+            foreach (int number in numbers)
+            {
+                if (currentNumber != number)
+                {
+                    twice = 0;
+                }
+                currentNumber = number;
+                if(currentNumber == number && twice < 2)
+                {
+                    result.Add(currentNumber);
+                    twice++;
+                }
+            }
+            return result.ToArray();
+        }
     }
 }

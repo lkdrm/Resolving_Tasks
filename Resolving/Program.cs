@@ -39,4 +39,13 @@ var removeDuplicateTask4 = RemoveDuplicate.Resolving2([0, 0, 1, 1, 1, 2, 2, 3, 3
 Console.WriteLine($"First [{string.Join(",", removeDuplicateTask4)}], Length : {removeDuplicateTask4.Length}");
 #endregion
 
+Console.WriteLine("************************************");
+
+#region Task 4:
+var removeDuplicateTask5 = RemoveDuplicate.Resolving3([1, 1, 1, 2, 2, 3]);
+Console.WriteLine($"First [{string.Join(",", removeDuplicateTask5)}], Length : {removeDuplicateTask5.Length}");
+var removeDuplicateTask6 = RemoveDuplicate.Resolving3([0, 0, 1, 1, 1, 1, 2, 3, 3]);
+Console.WriteLine($"Second [{string.Join(",", removeDuplicateTask6)}], Length : {removeDuplicateTask6.Length}");
+#endregion
+
 Console.ReadLine();
