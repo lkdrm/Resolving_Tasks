@@ -33,7 +33,10 @@ namespace Resolving
                         majority++;
                     }
                 }
-                result[numb] = majority;
+                if (majority > 0)
+                {
+                    result[numb] = majority;
+                }
             }
 
             var resultKeyValue = result.Aggregate((x, y) => x.Value > y.Value ? x : y);
