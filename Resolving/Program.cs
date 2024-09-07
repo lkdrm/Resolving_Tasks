@@ -48,4 +48,13 @@ var removeDuplicateTask6 = RemoveDuplicate.Resolving3([0, 0, 1, 1, 1, 1, 2, 3, 3
 Console.WriteLine($"Second [{string.Join(",", removeDuplicateTask6)}], Length : {removeDuplicateTask6.Length}");
 #endregion
 
+Console.WriteLine("************************************");
+
+#region Task 5:
+var resolveMajority = MajorityElement.Resolve([3, 2, 3]);
+Console.WriteLine($"First [3,2,3] || Resolve: {resolveMajority}");
+var resolveMajority2 = MajorityElement.Resolve([2, 2, 1, 1, 1, 2, 2]);
+Console.WriteLine($"Second [2, 2, 1, 1, 1, 2, 2] || Resolve: {resolveMajority2}");
+#endregion
+
 Console.ReadLine();
